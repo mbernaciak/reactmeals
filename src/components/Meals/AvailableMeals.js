@@ -13,7 +13,7 @@ const DUMMY_MEALS = [
   },
   {
     id: "m2",
-    name: "v",
+    name: "Schnitzel",
     description: "A german specialty!",
     price: 16.5,
   },
@@ -39,7 +39,7 @@ const AvailableMeals = () => {
   useEffect(() => {
     const fetchMeals = async () => {
       const response = await fetch(
-        "https://react-http-efb2b-default-rtdb.firebaseio.com//meals.json"
+        "https://react-http-efb2b-default-rtdb.firebaseio.com/meals.json"
       );
       if (!response.ok) {
         throw new Error("Something went wrong");
